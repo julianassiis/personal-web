@@ -52,7 +52,7 @@ class App extends React.Component {
             <p className="info mb-1 mt-2 fw-light main small">JULIANA ASSIS</p>
             <p className="info pt-1 mb-4 fw-bold main">User Interface &<br /> Experience Designer</p>
             <p className="info pt-1 mb-1 fw-light">23-year-old human who mainly does UI/UX and graphic design with a bit of front-end on the side. The motto is always trying to stick to simplicity and not overcomplicating while still working on new and sometimes crazy things. A walking paradox.</p>
-            <p className="info pt-1 mb-1 fw-light">You can stalk me on LinkedIn, check some of my work on Behance and get to know me on Instagram.</p>
+            <p className="info pt-1 mb-1 fw-light">You can stalk me on <a href="https://www.linkedin.com/in/julianassiis/" target="_blank">LinkedIn</a>, check some of my work on <a href="https://www.behance.net/julianassiis" target="_blank">Behance</a> and get to know me on <a href="https://www.instagram.com/julianassiis/" target="_blank">Instagram</a>.</p>
             <p className="info pt-1 mb-4 fw-light">You can also have some fun with the background of this website. <span className="fw-bold">Enjoy ಇ( ꈍᴗꈍ)ಇ</span></p>
             <div className="quote">
               <p className="info pt-1 mb-1 fw-lighter fst-italic"><span className="fst-normal">Narrator:</span> There he goes. One of God’s own prototypes. A high-powered mutant of some kind never even considered for mass production. Too weird to live and too rare to die.</p>

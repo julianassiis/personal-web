@@ -119,3 +119,18 @@ body {
 .grid-element:hover {
   opacity: 0.8;
 }
+
+a {
+  color: #fefbf6!important;
+  text-decoration: none!important;
+  background: linear-gradient(to right, rgb(254, 251, 246), rgb(254, 251, 246)), linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.37));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
