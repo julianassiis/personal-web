@@ -4,6 +4,7 @@ import React from "react";
 import randomColor from 'randomcolor/randomColor';
 
 //Note to professor: I chose to do all the main in App.js because I didn't think it was useful to create an individual component due to the simplicity of the website and it was easier for me since I don't have a lot of experience with class components and due to the help I found online
+
 class App extends React.Component {
   state = {
     columns: 0,
