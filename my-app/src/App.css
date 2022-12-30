@@ -1,4 +1,6 @@
-html { font-size: calc(0.8em + 0.5vw); }
+html {
+  font-size: calc(0.8em + 0.5vw);
+}
 
 body {
   background: black;
@@ -14,33 +16,76 @@ body {
   position: relative;
 }
 
-/*Note to professor: I tried to somehow manage the responsiveness of the text by adjusting the width in relation to the parent since I needed this entire div to be positioned absolute to stack it with a functional/clickable interactive background */
-
 #intro {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 1rem;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 20px;
   word-wrap: break-word;
-
-  /*bad centering for now*/
-  top: 5rem;
-  bottom: 5rem
 }
 
 .info {
-  background-color: rgba(30, 30, 30, 0.5);
+  background-color: rgba(30, 30, 30, 0.85);
   color: #fefbf6;
   width: 80%;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 
 }
 
-.main {
-  width: 20%;
+.quote {
+  width: 100%;
+  height: 0;
 }
+
+/*Note to professor: I tried to somehow manage the responsiveness of the text by adjusting the width in relation to the parent since I needed this entire div to be positioned absolute to stack it with a functional/clickable interactive background */
+@media screen and (max-width: 576px) {
+  .main {
+    width: 60%;
+  }
+  #intro {
+    bottom: 89%;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 576px) {
+  #intro {
+    bottom: 82%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .main {
+    width: 40%;
+  }
+  #intro {
+    bottom: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 30%;
+  }
+  #intro {
+    bottom: 70%;
+  }
+}
+
+@media screen and (min-width: 1283px) {
+  #intro {
+    bottom: 65%
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main {
+    width: 20%;
+  }
+}
+/**********/
 
 #grid {
   width: 100vw;
@@ -54,7 +99,7 @@ body {
 .grid-element {
   min-width: 100%;
   min-height: 100%;
-  background-color: #cb6969;
+  background-color: #C69FF2;
   cursor: pointer;
   position: relative;
 }
