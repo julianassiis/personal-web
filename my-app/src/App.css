@@ -1,3 +1,5 @@
+html { font-size: calc(0.8em + 0.5vw); }
+
 body {
   background: black;
   margin: 0;
@@ -6,6 +8,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#root {
+  position: relative;
+}
+
+/*Note to professor: I tried to somehow manage the responsiveness of the text by adjusting the width in relation to the parent since I needed this entire div to be positioned absolute to stack it with a functional/clickable interactive background */
+
+#intro {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  word-wrap: break-word;
+
+  /*bad centering for now*/
+  top: 5rem;
+  bottom: 5rem
+}
+
+.info {
+  background-color: white;
+  width: 80%;
+  display: inline-block;
 }
 
 #grid {

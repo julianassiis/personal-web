@@ -51,6 +51,16 @@ class App extends React.Component {
 
     return (
         <div id="root">
+          <div id="intro">
+            <p className="info mb-1 mt-2">JULIANA ASSIS</p>
+            <p className="info pt-1 mb-4">user interface & experience designer</p>
+            <p className="info pt-1 mb-4">A 23-year-old who mainly does UI/UX and graphic design with a bit of front-end on the side. My motto is always trying to stick to simplicity and not overcomplicating while still working on new and sometimes crazy things. A walking paradox.</p>
+            <p className="info pt-1 mb-1">Narrator: There he goes. One of God’s own prototypes. A high-powered mutant of some kind never even considered for mass production. Too weird to live and too rare to die.</p>
+            <p className="info pt-1 mb-4">Fear and Loathing in Las Vegas (1998)</p>
+            <p className="info pt-1 mb-1">You can stalk me on LinkedIn, check some of my work on Behance and get to know me on Instagram.</p>
+            <p className="info pt-1 mb-0">You can also have some fun with the background of this website. Enjoy :) </p>
+          </div>
+
           <div id="grid">
             {[...Array(total)].map((x, i) => (
                 <div className="grid-element" id={`${i}`} onClick={(i) => this.colorWave(i)}/>
